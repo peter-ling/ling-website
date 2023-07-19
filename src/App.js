@@ -1,0 +1,254 @@
+import React from 'react';
+import './App.css';
+import TypeWriterEffect from 'react-typewriter-effect';
+import lingImage from './assets/images/ling-photo.jpg'
+// import { Card } from '@mui/material';
+// import { CCard } from '@coreui/react'
+import { Card } from '@mui/material';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import ImgMediaCard from './app/components/ImgMediaCard';
+import { CCardBody, CCard, CCardImage, CCardText, CCardTitle, CCardSubtitle, CButton } from '@coreui/react';
+import NewJobCard from './app/components/NewJobCard';
+import Typewriter from 'typewriter-effect';
+import { red } from '@mui/material/colors';
+
+
+const handleButtonClick = () => {
+  const handleClick = (url) => {
+    // window.open('https://web.stanford.edu/class/cs194h/projects/daha/', '_blank');
+    console.log(url)
+
+  }
+};
+
+const NavHeader = () => (
+  <nav style={{ display: 'flex', padding: '1rem', width: "100%", backgroundColor: "#38606B" }}>
+    <p style={{flex: 4, color: "#EBD3BC"}}>Peter Ling</p>
+    <ul style={{ display: 'flex', flex: 6, justifyContent: 'space-evenly', listStyle: 'none', padding: 0, width: '100%' }}>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+);
+
+// const TypewriterExample = () => (
+//   <Typewriter
+//     strings={words}
+//     typeSpeed={40}
+//     startDelay={1000}
+//     loop={true}
+//   />
+// );
+
+const TestTypewriter = () => {
+
+  return (
+    <Typewriter
+      options={{
+      strings: ['Engineer', 'Designer', 'Creator'],
+      autoStart: true,
+      loop: true,
+  }}
+  />
+
+  )
+  
+  
+}
+
+const Home = () => (
+  <section className="home-section">
+    <div className="home-name-div">
+    <h1 style={{color:" #103842"}}>peter ling</h1>
+    <h3 style={{color: "#103842", marginTop: '-1em'}}>engineer, developer, designer</h3>
+    {/* <Typewriter
+
+      options={{
+      strings: ['Engineer', 'Designer', 'Creator'],
+      autoStart: true,
+      loop: true,
+      }}
+    /> */}
+    {/* <TestTypewriter textStyle={{ fontSize: 250 }}/> */}
+
+  
+    
+    {/* Potentially looking for a better Typewriter library  */}
+    {/* <TypeWriterEffect
+            textStyle={{
+              // fontFamily: 'Red Hat Display',
+              color: '#3F3D56',
+              fontWeight: 500,
+              fontSize: '1.5em',
+            }}
+            startDelay={2000}
+            cursorColor="#3F3D56"
+            multiText={[
+              'software developer',
+              'designer',
+              'engineer',
+            ]}
+            multiTextDelay={500}
+            typeSpeed={250}
+            multiTextLoop={true}
+          /> */}
+          
+    </div>
+    
+  </section>
+);
+
+const About = () => (
+  <section className="about-section">
+
+    <h2 className="about-section-title">about</h2>
+
+    <div className="about-section-inner-div">
+      {/* <div classname="about-section-text-div">
+        <img className="about-section-image" src={lingImage} alt="Image of Peter Ling" /> 
+      </div>
+      <div className="about-section-image-div">
+        <img className="about-section-image" src={lingImage} alt="Image of Peter Ling" /> 
+      </div> */}
+      <div className="about-section-text-div">
+        <p className="about-section-text">my name is peter ling. i'm a junior studing computer science focusing in human-computer interaction at stanford university, where i'll graduate with a bs in 2024 and a ms in 2025. i'm passionate about creating products that can help individuals live more effiicent lives regardless of their technical expertise. when i'm not coding, you can find me on the golf course, surfing, or walking backwards around campus as a tour guide.</p>
+        <p>my resume</p>
+      </div>
+      <div className="about-section-image-div"> 
+        <img className="about-section-image" src={lingImage} alt="Image of Peter Ling" /> 
+      </div>
+    </div>
+
+    {/* Information about you and your skills */}
+  </section>
+);
+
+const WorkExperience = () => (
+  <section className="work-section">
+
+    <div className="work-greater-div">
+      <h2>work experience</h2>
+      <h3>here's where i've interned</h3>
+
+      <div className="work-experiences-div">
+
+
+        <CCard className="job-card">
+          <CCardBody className="job-card-body">
+            <CCardImage style={{width: '100%'}} orientation="top" src={require('./assets/images/fanduel_logo_2.jpeg')} />
+            <CCardTitle style={{fontSize: "2rem"}}>FanDuel</CCardTitle>
+            <button className='job-card-button' href="#">Learn More</button>
+            <CCardSubtitle style={{fontSize: "1rem",  marginBottom: '-1.75rem'}}>Software Engineer Intern</CCardSubtitle>
+            <CCardSubtitle style={{fontSize: "1rem"}}>Summer 2023, New York, NY</CCardSubtitle>
+          </CCardBody>
+        </CCard>
+
+        <CCard className="job-card">
+          <CCardBody className="job-card-body">
+            <CCardImage style={{width: '100%'}} orientation="top" src={require('./assets/images/mercury_logo2.png')} />
+            <CCardTitle style={{fontSize: "2rem"}}>Mercury Systems</CCardTitle>
+            <button className='job-card-button' href="#">Learn More</button>
+            <CCardSubtitle style={{fontSize: "1rem", marginBottom: '-1.75rem'}}>Software Engineering Intern</CCardSubtitle>
+            <CCardSubtitle style={{fontSize: "1rem"}}>Summer 2022, Torrance, CA</CCardSubtitle>
+          </CCardBody>
+        </CCard>
+
+
+      </div>
+
+
+    </div>
+  </section>
+
+);
+
+
+
+const Projects = () => (
+  <section className="projects-section">
+    {/* List of your projects, including project name, description, and a link */}
+    <div className="projects-greater-div">
+    <h2>projects</h2>
+    <h3>take a look at some of the stuff i've worked on over the years</h3>
+
+    <div className="projects-grid-container" style={{backgroundColor: 'red'}}>
+
+      <CCard className="project-card">
+        <CCardBody className="project-card-body">
+          <CCardTitle className='project-card-title'>daha</CCardTitle>
+          <CCardSubtitle className="project-card-description"  style={{fontSize: "1rem", marginTop: '-1.75rem'}}>designed, itereated, and coded an app to create a lending market on campuses with a team of 3 other stanford students.</CCardSubtitle>
+          <button className='project-card-button' onClick={() => window.open('https://web.stanford.edu/class/cs194h/projects/daha/')}>Learn More</button>
+          <CCardSubtitle className="project-card-description" style={{fontSize: "1rem", marginBottom: '-1.75rem'}}>react native, html/css, design</CCardSubtitle>
+          <CCardSubtitle className="project-card-description" style={{fontSize: "1rem"}}>september 2022 — march 2023</CCardSubtitle>
+        </CCardBody>
+      </CCard>
+
+      <CCard className="project-card">
+        <CCardBody className="project-card-body">
+          <CCardTitle className='project-card-title'>chatbot</CCardTitle>
+          <CCardSubtitle className="project-card-description"  style={{fontSize: "1rem", marginTop: '-1.75rem'}}>using techniques such as sentiment analysis and ML, worked with a group to create a functional movie-recomendation chatbot.</CCardSubtitle>
+          <button className='project-card-button' onClick={() => window.open('https://github.com/larsenweigle/chatbot/blob/main/chatbot.py')}>Learn More</button>
+          <CCardSubtitle className="project-card-description" style={{fontSize: "1rem", marginBottom: '-1.75rem'}}>python, machine learning</CCardSubtitle>
+          <CCardSubtitle className="project-card-description" style={{fontSize: "1rem"}}>may — june 2023</CCardSubtitle>
+        </CCardBody>
+      </CCard>
+      
+      <CCard className="project-card">
+        <CCardBody className="project-card-body">
+          <CCardTitle className='project-card-title'>hangman game</CCardTitle>
+          <CCardSubtitle className="project-card-description"  style={{fontSize: "1rem", marginTop: '-1.75rem'}}>created a hangman game in C++ while learning the language and some of its libraries</CCardSubtitle>
+          <button className='project-card-button' onClick={() => window.open('https://github.com/peter-ling/word-guessing-game')}>Learn More</button>
+          <CCardSubtitle className="project-card-description" style={{fontSize: "1rem", marginBottom: '-1.75rem'}}>C++</CCardSubtitle>
+          <CCardSubtitle className="project-card-description" style={{fontSize: "1rem"}}>2021</CCardSubtitle>
+        </CCardBody>
+      </CCard>
+
+      <CCard className="project-card">
+        <CCardBody className="project-card-body">
+          <CCardTitle className='project-card-title'>emotional hub website</CCardTitle>
+          <CCardSubtitle className="project-card-description"  style={{fontSize: "1rem", marginTop: '-1.75rem'}}>built a platform in html to serve as both a source of positivity and a reflective journal</CCardSubtitle>
+          <button className='project-card-button' onClick={() => window.open('https://github.com/peter-ling/word-guessing-game')}>Learn More</button>
+          <CCardSubtitle className="project-card-description" style={{fontSize: "1rem", marginBottom: '-1.75rem'}}>C++</CCardSubtitle>
+          <CCardSubtitle className="project-card-description" style={{fontSize: "1rem"}}>2021</CCardSubtitle>
+        </CCardBody>
+      </CCard>
+
+    </div> 
+
+
+
+
+
+    </div>
+  </section>
+);
+
+const Contact = () => (
+  <section>
+    {/* Your contact information, such as email address, phone number, and social media links */}
+  </section>
+);
+
+const App = () => (
+  <main className="App" style={{ width: '100%', height: "100%" }}>
+
+    <NavHeader />
+    
+    <Home />
+    <About />
+    <WorkExperience />
+    <Projects />
+    <Contact />
+    <footer>
+      <p style={{color: "#EBD3BC"}}>Copyright © 2023 Peter Ling</p>
+    </footer>
+  </main>
+);
+
+export default App;

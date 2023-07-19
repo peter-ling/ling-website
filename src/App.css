@@ -1,0 +1,298 @@
+@font-face {
+  font-family: "LeagueSpartan";
+  src: url("./assets/fonts/LeagueSpartan-Bold.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  --grey-color: #38606B, 
+  --almond-color: #EBD3BC,
+  --green-color: #103842
+}
+
+/* LINK FOR COLOR PALLETTE  https://coolors.co/38606b-ebd3bc-103842 */
+
+
+
+.App {
+  /* text-align: center; */
+  /* background-color: #38606B; */
+  width: 100%;
+}
+
+.App-header {
+  background-color: #282c34;
+  /* background-color: yellow; */
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: royalblue; */
+  /* height: 100%; */
+  background-color: #38606B;
+
+
+}
+
+.about-section-image-div {
+  display: flex;
+  /* flex: 1; */
+  width: 40%;
+  justify-content: center;
+  /* background-color: red; */
+
+}
+
+.about-section-image {
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 1;
+
+}
+
+.about-section-inner-div {
+  /* width: "; */
+  width: 80%;
+  height: 40%;
+  /* height: 100%; */
+  display: flex;
+  /* background-color: blue; */
+  justify-content: space-between;
+  margin-bottom: 10%;
+  
+}
+
+.about-section-title {
+  /* background-color: green; */
+  color: #EBD3BC;
+}
+
+.about-section-text {
+  max-width: 100%;
+  word-wrap: break-word;
+  color: #EBD3BC;
+}
+
+.about-section-text-div {
+  /* flex: 1; */
+  width: 40%;
+  /* background-color: blue;  */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+body {
+  font-family: "LeagueSpartan", sans-serif;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.home-name-div {
+  flex-direction: column;
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-section {
+
+  background-image: url("./assets/images/palisades-sunset.jpg");
+  /* background-color: blue; */
+  height: 35rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-color: rgba(179, 38, 38, 0.5); */
+}
+
+
+
+
+.job-card {
+  /* background-color: red; */
+  /* display: flex; */
+  /* align-items: center; */
+  border: 2px solid #38606B;
+  /* width: '6rem', */
+  width: 33%;
+
+  /* border-radius: 1000; */
+}
+
+.job-card-body {
+  /* background-color: green; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.job-card-body-smaller {
+  /* background-color: green; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.job-card-button {
+  background-color: #38606B;
+  width: 60%;
+  /* height: 25%; */
+  font-size: 1.5rem;
+  color: #EBD3BC;
+  border-radius: 15px;
+}
+
+
+.projects-greater-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  /* height: 100%; */
+  min-height: fit-content;
+
+}
+
+.project-card {
+  /* background-color: red; */
+  /* display: flex; */
+  /* align-items: center; */
+  border: 2px solid #EBD3BC;
+  /* width: '6rem', */
+  width: 100%
+
+  /* border-radius: 1000; */
+}
+
+.project-card-body {
+  /* background-color: green; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5%;
+}
+
+.project-card-button {
+  background-color: #EBD3BC;
+  width: 60%;
+  /* height: 25%; */
+  font-size: 1.5rem;
+  color: #38606B;
+  border-radius: 15px;
+}
+
+.project-card-description {
+  text-align-last: center;
+  text-align: center;
+}
+
+.project-card-title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.projects-grid-container {
+  display: grid;
+  /* display: table; */
+  width: 80%;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-gap: 10%; 
+  /* height: 100%; */
+  /* background-color: beige; */
+  min-height: fit-content;
+}
+
+.projects-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: royalblue; */
+  height: 100%;
+  background-color: #38606B;
+  color: #EBD3BC;
+  /* min-height: fit-content; *
+}
+
+
+
+
+
+.topRightNavButtonsDiv {
+  background-color: green;
+  width: 70%;
+}
+
+.topNameTextDiv {
+  background-color: purple;
+  width: 30%;
+}
+
+.typewriter-div {
+  /* background-color: green; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.work-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #EBD3BC;
+  padding-bottom: 2.5%;
+}
+
+.work-experiences-div {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.work-greater-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+
