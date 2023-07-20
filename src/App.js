@@ -177,20 +177,20 @@ const Projects = () => (
       <CCard className="project-card">
         <CCardBody className="project-card-body">
           <CCardTitle className='project-card-title'>daha</CCardTitle>
-          <CCardSubtitle className="project-card-description"  style={{fontSize: "1rem", marginTop: '-1.75rem'}}>designed, itereated, and coded an app to create a lending market on campuses with a team of 3 other stanford students.</CCardSubtitle>
-          <button className='project-card-button' onClick={() => window.open('https://web.stanford.edu/class/cs194h/projects/daha/')}>Learn More</button>
-          <CCardSubtitle className="project-card-description" style={{fontSize: "1rem", marginBottom: '-1.75rem'}}>react native, html/css, design</CCardSubtitle>
+          <CCardSubtitle className="project-card-description"  style={{fontSize: "1rem", marginTop: '-1.75rem'}}>designed, itereated, and coded an app to create a lending market on campuses with a team of 3 other stanford students. helped prototype throughout the design process, co-wrote the front-end and back-end code, and also coded the landing/information page.</CCardSubtitle>
+          <button className='project-card-button' onClick={() => window.open('https://web.stanford.edu/class/cs194h/projects/daha/')}>learn more</button>
+          <CCardSubtitle className="project-card-description" style={{fontSize: "1rem", marginBottom: '-1.75rem'}}>react native, javascript, supabase, html/css, design</CCardSubtitle>
           <CCardSubtitle className="project-card-description" style={{fontSize: "1rem"}}>september 2022 — march 2023</CCardSubtitle>
         </CCardBody>
       </CCard>
 
       <CCard className="project-card">
         <CCardBody className="project-card-body">
-          <CCardTitle className='project-card-title'>chatbot</CCardTitle>
-          <CCardSubtitle className="project-card-description"  style={{fontSize: "1rem", marginTop: '-1.75rem'}}>created a functional movie-recommending chatbot using techniques such as sentiment analysis and ML.</CCardSubtitle>
-          <button className='project-card-button' onClick={() => window.open('https://github.com/larsenweigle/chatbot/blob/main/chatbot.py')}>Learn More</button>
-          <CCardSubtitle className="project-card-description" style={{fontSize: "1rem", marginBottom: '-1.75rem'}}>python, machine learning</CCardSubtitle>
-          <CCardSubtitle className="project-card-description" style={{fontSize: "1rem"}}>may — june 2023</CCardSubtitle>
+          <CCardTitle className='project-card-title'>card probability distribution displayer</CCardTitle>
+          <CCardSubtitle className="project-card-description"  style={{fontSize: "1rem", marginTop: '-1.75rem'}}>i've always been intrigued by the numbers, statistics, and probability that lay the grounds for card games such as poker. this led me to build this python tool that can help a player understand the probability of future cards to be dealt given the previous action.</CCardSubtitle>
+          <button className='project-card-button' onClick={() => window.open('https://github.com/peter-ling/word-guessing-game')}>learn more</button>
+          <CCardSubtitle className="project-card-description" style={{fontSize: "1rem", marginBottom: '-1.75rem'}}>C++</CCardSubtitle>
+          <CCardSubtitle className="project-card-description" style={{fontSize: "1rem"}}>febuary 2022</CCardSubtitle>
         </CCardBody>
       </CCard>
 
@@ -198,9 +198,19 @@ const Projects = () => (
         <CCardBody className="project-card-body">
           <CCardTitle className='project-card-title'>my personal website</CCardTitle>
           <CCardSubtitle className="project-card-description"  style={{fontSize: "1rem", marginTop: '-1.75rem'}}>taught myself react in order to build my personal portfolio website, which i guess you are looking at now. </CCardSubtitle>
-          <button className='project-card-button' onClick={() => window.open('https://github.com/peter-ling/word-guessing-game')}>Learn More</button>
-          <CCardSubtitle className="project-card-description" style={{fontSize: "1rem", marginBottom: '-1.75rem'}}>C++</CCardSubtitle>
-          <CCardSubtitle className="project-card-description" style={{fontSize: "1rem"}}>2021</CCardSubtitle>
+          <button className='project-card-button' onClick={() => window.open('https://github.com/peter-ling/ling-website')}>learn more</button>
+          <CCardSubtitle className="project-card-description" style={{fontSize: "1rem", marginBottom: '-1.75rem'}}>react, css, javascript</CCardSubtitle>
+          <CCardSubtitle className="project-card-description" style={{fontSize: "1rem"}}>april 2023 —</CCardSubtitle>
+        </CCardBody>
+      </CCard>
+
+      <CCard className="project-card">
+        <CCardBody className="project-card-body">
+          <CCardTitle className='project-card-title'>chatbot</CCardTitle>
+          <CCardSubtitle className="project-card-description"  style={{fontSize: "1rem", marginTop: '-1.75rem'}}>created a functional movie-recommending chatbot using techniques such as sentiment analysis and ML.</CCardSubtitle>
+          <button className='project-card-button' onClick={() => window.open('https://github.com/larsenweigle/chatbot/blob/main/chatbot.py')}>learn more</button>
+          <CCardSubtitle className="project-card-description" style={{fontSize: "1rem", marginBottom: '-1.75rem'}}>python, machine learning</CCardSubtitle>
+          <CCardSubtitle className="project-card-description" style={{fontSize: "1rem"}}>may — june 2023</CCardSubtitle>
         </CCardBody>
       </CCard>
       
@@ -208,21 +218,62 @@ const Projects = () => (
         <CCardBody className="project-card-body">
           <CCardTitle className='project-card-title'>hangman game</CCardTitle>
           <CCardSubtitle className="project-card-description"  style={{fontSize: "1rem", marginTop: '-1.75rem'}}>created a hangman game in C++ while learning the language and some of its libraries</CCardSubtitle>
-          <button className='project-card-button' onClick={() => window.open('https://github.com/peter-ling/word-guessing-game')}>Learn More</button>
+          <button className='project-card-button' onClick={() => window.open('https://github.com/peter-ling/word-guessing-game')}>learn more</button>
           <CCardSubtitle className="project-card-description" style={{fontSize: "1rem", marginBottom: '-1.75rem'}}>C++</CCardSubtitle>
-          <CCardSubtitle className="project-card-description" style={{fontSize: "1rem"}}>2021</CCardSubtitle>
+          <CCardSubtitle className="project-card-description" style={{fontSize: "1rem"}}>june 2021</CCardSubtitle>
         </CCardBody>
       </CCard>
 
       <CCard className="project-card">
         <CCardBody className="project-card-body">
           <CCardTitle className='project-card-title'>emotional hub website</CCardTitle>
-          <CCardSubtitle className="project-card-description"  style={{fontSize: "1rem", marginTop: '-1.75rem'}}>built a platform in html to serve as both a source of positivity and a reflective journal</CCardSubtitle>
-          <button className='project-card-button' onClick={() => window.open('https://github.com/peter-ling/word-guessing-game')}>Learn More</button>
-          <CCardSubtitle className="project-card-description" style={{fontSize: "1rem", marginBottom: '-1.75rem'}}>C++</CCardSubtitle>
-          <CCardSubtitle className="project-card-description" style={{fontSize: "1rem"}}>2021</CCardSubtitle>
+          <CCardSubtitle className="project-card-description"  style={{fontSize: "1rem", marginTop: '-1.75rem'}}>built a platform in html to serve as both a source of positivity and a reflective journal. gained database experience by linking the site up with a MongoDB responsible for reading, writing, and deleting.</CCardSubtitle>
+          <button className='project-card-button' onClick={() => window.open('https://github.com/peter-ling/word-guessing-game')}>learn more</button>
+          <CCardSubtitle className="project-card-description" style={{fontSize: "1rem", marginBottom: '-1.75rem'}}>html, css, MongoDB</CCardSubtitle>
+          <CCardSubtitle className="project-card-description" style={{fontSize: "1rem"}}>may 2021</CCardSubtitle>
         </CCardBody>
       </CCard>
+
+      <CCard className="project-card">
+        <CCardBody className="project-card-body">
+          <CCardTitle className='project-card-title'>football player guessing game</CCardTitle>
+          <CCardSubtitle className="project-card-description"  style={{fontSize: "1rem", marginTop: '-1.75rem'}}>created a command line game that challenges a user to guess a football player given certain hints about who they might be. an early project for me that taught me alot about I/O in c++.</CCardSubtitle>
+          <button className='project-card-button' onClick={() => window.open('https://github.com/peter-ling/football-trivia-game')}>learn more</button>
+          <CCardSubtitle className="project-card-description" style={{fontSize: "1rem", marginBottom: '-1.75rem'}}>C++</CCardSubtitle>
+          <CCardSubtitle className="project-card-description" style={{fontSize: "1rem"}}>march 2022</CCardSubtitle>
+        </CCardBody>
+      </CCard>
+
+      <CCard className="project-card">
+        <CCardBody className="project-card-body">
+          <CCardTitle className='project-card-title'>hangman game</CCardTitle>
+          <CCardSubtitle className="project-card-description"  style={{fontSize: "1rem", marginTop: '-1.75rem'}}>built an MVP for a peer-recommendation site for students studying abroad. created the recommendation grid and linked it with a supabase backend so that users' progress and a recommendation's number of votes would save</CCardSubtitle>
+          <button className='project-card-button' onClick={() => window.open('https://github.com/peter-ling/word-guessing-game')}>learn more</button>
+          <CCardSubtitle className="project-card-description" style={{fontSize: "1rem", marginBottom: '-1.75rem'}}>C++</CCardSubtitle>
+          <CCardSubtitle className="project-card-description" style={{fontSize: "1rem"}}>april — may 2023</CCardSubtitle>
+        </CCardBody>
+      </CCard>
+
+      <CCard className="project-card">
+        <CCardBody className="project-card-body">
+          <CCardTitle className='project-card-title'>logistic regression</CCardTitle>
+          <CCardSubtitle className="project-card-description"  style={{fontSize: "1rem", marginTop: '-1.75rem'}}>wrote, trained, and tested a machine learning algorithm that takes in csv files to make predictions on their outputs.</CCardSubtitle>
+          <button className='project-card-button' onClick={() => window.open('https://github.com/peter-ling/logistic-regression')}>learn more</button>
+          <CCardSubtitle className="project-card-description" style={{fontSize: "1rem", marginBottom: '-1.75rem'}}>python, machine learning</CCardSubtitle>
+          <CCardSubtitle className="project-card-description" style={{fontSize: "1rem"}}>november — december 2021</CCardSubtitle>
+        </CCardBody>
+      </CCard>
+
+      <CCard className="project-card">
+        <CCardBody className="project-card-body">
+          <CCardTitle className='project-card-title'>naive bayes</CCardTitle>
+          <CCardSubtitle className="project-card-description"  style={{fontSize: "1rem", marginTop: '-1.75rem'}}>using naive bayes, created a machine learning algorithm to make predictions given previous training data.</CCardSubtitle>
+          <button className='project-card-button' onClick={() => window.open('https://github.com/peter-ling/naive-bayes')}>learn more</button>
+          <CCardSubtitle className="project-card-description" style={{fontSize: "1rem", marginBottom: '-1.75rem'}}>python, machine learning</CCardSubtitle>
+          <CCardSubtitle className="project-card-description" style={{fontSize: "1rem"}}>november — december 2021</CCardSubtitle>
+        </CCardBody>
+      </CCard>
+
 
 
     </div> 
