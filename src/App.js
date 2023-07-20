@@ -124,8 +124,6 @@ const About = () => (
         <img className="about-section-image" src={lingImage} alt="Image of Peter Ling" /> 
       </div>
     </div>
-
-    {/* Information about you and your skills */}
   </section>
 );
 
@@ -158,10 +156,7 @@ const WorkExperience = () => (
             <CCardSubtitle style={{fontSize: "1rem"}}>Summer 2022, Torrance, CA</CCardSubtitle>
           </CCardBody>
         </CCard>
-
-
       </div>
-
 
     </div>
   </section>
@@ -177,7 +172,7 @@ const Projects = () => (
     <h2>projects</h2>
     <h3>take a look at some of the stuff i've worked on over the years</h3>
 
-    <div className="projects-grid-container" style={{backgroundColor: 'red'}}>
+    <div className="projects-grid-container">
 
       <CCard className="project-card">
         <CCardBody className="project-card-body">
@@ -192,10 +187,20 @@ const Projects = () => (
       <CCard className="project-card">
         <CCardBody className="project-card-body">
           <CCardTitle className='project-card-title'>chatbot</CCardTitle>
-          <CCardSubtitle className="project-card-description"  style={{fontSize: "1rem", marginTop: '-1.75rem'}}>using techniques such as sentiment analysis and ML, worked with a group to create a functional movie-recomendation chatbot.</CCardSubtitle>
+          <CCardSubtitle className="project-card-description"  style={{fontSize: "1rem", marginTop: '-1.75rem'}}>created a functional movie-recommending chatbot using techniques such as sentiment analysis and ML.</CCardSubtitle>
           <button className='project-card-button' onClick={() => window.open('https://github.com/larsenweigle/chatbot/blob/main/chatbot.py')}>Learn More</button>
           <CCardSubtitle className="project-card-description" style={{fontSize: "1rem", marginBottom: '-1.75rem'}}>python, machine learning</CCardSubtitle>
           <CCardSubtitle className="project-card-description" style={{fontSize: "1rem"}}>may — june 2023</CCardSubtitle>
+        </CCardBody>
+      </CCard>
+
+      <CCard className="project-card">
+        <CCardBody className="project-card-body">
+          <CCardTitle className='project-card-title'>my personal website</CCardTitle>
+          <CCardSubtitle className="project-card-description"  style={{fontSize: "1rem", marginTop: '-1.75rem'}}>taught myself react in order to build my personal portfolio website, which i guess you are looking at now. </CCardSubtitle>
+          <button className='project-card-button' onClick={() => window.open('https://github.com/peter-ling/word-guessing-game')}>Learn More</button>
+          <CCardSubtitle className="project-card-description" style={{fontSize: "1rem", marginBottom: '-1.75rem'}}>C++</CCardSubtitle>
+          <CCardSubtitle className="project-card-description" style={{fontSize: "1rem"}}>2021</CCardSubtitle>
         </CCardBody>
       </CCard>
       
@@ -218,6 +223,7 @@ const Projects = () => (
           <CCardSubtitle className="project-card-description" style={{fontSize: "1rem"}}>2021</CCardSubtitle>
         </CCardBody>
       </CCard>
+
 
     </div> 
 
