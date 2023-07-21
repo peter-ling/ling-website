@@ -13,18 +13,16 @@ main {
 
 /* LINK FOR COLOR PALLETTE  https://coolors.co/38606b-ebd3bc-103842 */
 
-
+html {
+  background-color: #38606B;
+}
 
 .App {
-  /* text-align: center; */
-  /* background-color: #38606B; */
   width: 100%;
 }
 
 .App-header {
   background-color: #282c34;
-  /* background-color: yellow; */
-  /* min-height: 100vh; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -38,43 +36,56 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* background-color: royalblue; */
-  /* height: 100%; */
   background-color: #38606B;
+  color: #EBD3BC;
 
 
 }
 
 .about-section-image-div {
-  display: flex;
-  /* flex: 1; */
+  /* display: flex; */
   width: 40%;
   justify-content: center;
-  /* background-color: red; */
-
+  align-items: center;
 }
 
 .about-section-image {
-  height: 100%;
-  width: 100%;
-  aspect-ratio: 1;
+  /* height: 100%; */
+  /* width: 100%; */
+  /* max-height: 100%; */
+  max-width: 100%;
+  /* aspect-ratio: 1004/1025; */
 
 }
 
-.about-section-inner-div {
-  /* width: "; */
+.about-section-top-div {
   width: 80%;
   height: 40%;
-  /* height: 100%; */
   display: flex;
-  /* background-color: blue; */
   justify-content: space-between;
-  margin-bottom: 10%;
-  
+  margin-bottom: 5%;
+}
+.about-section-bottom-div {
+  /* height: 2000px; */
+  /* padding-top: -500px; */
+  width: 80%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+}
+
+.about-section-school-div {
+  display: flex;
+  width: 36%;
+  /* background-color: blue; */
+  /* align-items: center; */
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
 }
 
 .about-section-title {
-  /* background-color: green; */
   color: #EBD3BC;
 }
 
@@ -85,6 +96,7 @@ main {
 }
 
 .about-section-text-div {
+  padding-top: -30%;
   /* flex: 1; */
   width: 40%;
   /* background-color: blue;  */
@@ -93,6 +105,11 @@ main {
   text-align: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.about-section-stanford-logo {
+  height: 20em;
+
 }
 
 body {
@@ -116,46 +133,75 @@ p {
   font-size: 1.5rem;
 }
 
+.contact-element {
+  font-size: 1rem;
+  /* flex: 1; */
+  /* background-color: red; */
+  text-align: center;
+  width: 33%;
+}
+
+.contact-elements-div {
+  width: 100%;
+  display: flex;
+  /* justify-content: center; */
+  /* background-color: red; */
+  /* align-items: center; */
+  justify-content: space-evenly;
+
+}
+
+.contact-greater-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #EBD3BC;
+  padding-bottom: 2.5%;
+  color: #38606B;
+}
+
+.contact-section-title {
+  color: #38606B;
+}
+
 .home-name-div {
   flex-direction: column;
-  /* background-color: green; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .home-section {
-
   background-image: url("./assets/images/palisades-sunset.jpg");
-  /* background-color: blue; */
   height: 35rem;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* background-color: rgba(179, 38, 38, 0.5); */
+  color: #38606B;
 }
 
 
 .job-card {
-  /* background-color: red; */
-  /* display: flex; */
-  /* align-items: center; */
   border: 2px solid #38606B;
-  /* width: '6rem', */
   width: 33%;
-
-  /* border-radius: 1000; */
 }
 
 .job-card-body {
-  /* background-color: green; */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .job-card-body-smaller {
-  /* background-color: green; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -170,6 +216,16 @@ p {
   border-radius: 15px;
 }
 
+.nav-header-element {
+  text-decoration: none;
+  color: #EBD3BC;
+  /* border: 2px solid #EBD3BC; */
+  /* padding: 5px 10px 5px 10px;
+  border-radius: 10px; */
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
 
 .projects-greater-div {
   display: flex;
@@ -177,22 +233,10 @@ p {
   width: 100%;
   align-items: center;
   justify-content: center;
-  /* height: 100%; */
-  /* min-height: fit-content; */
-
 }
 
 .project-card {
-  /* background-color: red; */
-  /* display: flex; */
-  /* align-items: center; */
   border: 2px solid #EBD3BC;
-  /* width: '6rem', */
-  /* width: 100% */
-  /* max-width: 33%; */
-  /* aspect-ratio: 1/1; */
-
-  /* border-radius: 1000; */
 }
 
 .project-card-body {
@@ -224,15 +268,9 @@ p {
 
 .projects-grid-container {
   display: grid;
-  /* display: table; */
   width: 80%;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 10%; 
-  /* height: 200px; */
-  /* background-color: beige; */
-  /* aspect-ratio: 1/1; */
-  /* min-height: 1000px; */
-  /* /* height: 2000px; */
   grid-row-gap: 5em; 
   padding-bottom: 2.5%;
   
@@ -243,11 +281,9 @@ p {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* background-color: royalblue; */
   height: 100%;
   background-color: #38606B;
   color: #EBD3BC;
-  /* /* min-height: fit-content; * */
 }
 
 
@@ -262,11 +298,9 @@ p {
 }
 
 .typewriter-div {
-  /* background-color: green; */
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* justify-content: space-between; */
 }
 
 .work-section {
@@ -276,6 +310,8 @@ p {
   justify-content: center;
   background-color: #EBD3BC;
   padding-bottom: 2.5%;
+  color: #38606B;
+  text-align: center;
 }
 
 .work-experiences-div {
