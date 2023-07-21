@@ -48,8 +48,8 @@ const NavHeader = () => (
   <nav style={{ display: 'flex', padding: '1rem', width: "100%", backgroundColor: "#38606B" }}>
     <p style={{flex: 4, color: "#EBD3BC"}}>Peter Ling</p>
     <ul style={{ display: 'flex', flex: 6, justifyContent: 'space-evenly', listStyle: 'none', padding: 0, width: '100%', alignItems: 'center' }}>
-      <li><a href="#" className="nav-header-element scroll-link">Home</a></li>
-      <li><a href="#" className="nav-header-element scroll-link">About</a></li>
+      <li><a href="#home-section" className="nav-header-element scroll-link">Home</a></li>
+      <li><a href="#about-section" className="nav-header-element scroll-link">About</a></li>
       <li><a href="#projects-section" className="nav-header-element scroll-link">Projects</a></li>
       <li><a href="#contact-section" className="nav-header-element scroll-link">Contact</a></li>
     </ul>
@@ -124,13 +124,13 @@ const Home = () => (
 );
 
 const About = () => (
-  <section className="about-section">
+  <section id="about-section" className="about-section">
 
     <h2 className="about-section-title">about</h2>
 
       <div className="about-section-top-div">
         <div className="about-section-text-div">
-          <p className="about-section-text">my name is peter ling. i study computer science focusing in human-computer interaction at stanford university. i've become passionate about building products and tools to individuals live more efficient and socially connected lives. when i'm not coding, you can find me on the golf course, surfing, or walking backwards around campus as a tour guide.</p>
+          <p className="about-section-text">my name is peter ling. i grew up in los angeles and now attend stanford university, where i study computer science with a concentration in human-computer interaction. i've become passionate about building products and tools to individuals live more efficient and socially connected lives. when i'm not coding, you can find me on the golf course, surfing, exploring the outdoors, or walking backwards around campus as a tour guide.</p>
         </div>
         <div className="about-section-image-div"> 
           <img className="about-section-image" src={lingImage} alt="Image of Peter Ling" /> 
@@ -140,13 +140,13 @@ const About = () => (
 
     <div className='about-section-bottom-div'>
       <div className='about-section-school-div'>
-        <p>b.s, computer science '24</p>
+        <p>b.s., computer science '24</p>
         <p>concentration in human-computer interaction</p>
 
       </div>
       <img className='about-section-stanford-logo' src={stanfordLogo}/>
       <div className='about-section-school-div'>
-        <p>m.s, computer science '25</p>
+        <p>m.s., computer science '25</p>
         <p>concentration in human-computer interaction</p>
       </div>
     </div>
@@ -166,7 +166,7 @@ const WorkExperience = () => (
           <CCardBody className="job-card-body">
             <CCardImage style={{width: '100%'}} orientation="top" src={require('./assets/images/fanduel_logo_2.jpeg')} />
             <CCardTitle style={{fontSize: "2rem"}}>FanDuel</CCardTitle>
-            <button className='job-card-button' href="#">Learn More</button>
+            <button className='job-card-button' href="#">learn more</button>
             <CCardSubtitle style={{fontSize: "1rem",  marginBottom: '-1.75rem'}}>Software Engineer Intern</CCardSubtitle>
             <CCardSubtitle style={{fontSize: "1rem"}}>Summer 2023, New York, NY</CCardSubtitle>
           </CCardBody>
@@ -176,7 +176,7 @@ const WorkExperience = () => (
           <CCardBody className="job-card-body">
             <CCardImage style={{width: '100%'}} orientation="top" src={require('./assets/images/mercury_logo2.png')} />
             <CCardTitle style={{fontSize: "2rem"}}>Mercury Systems</CCardTitle>
-            <button className='job-card-button' href="#">Learn More</button>
+            <button className='job-card-button' href="#">learn more</button>
             <CCardSubtitle style={{fontSize: "1rem", marginBottom: '-1.75rem'}}>Software Engineering Intern</CCardSubtitle>
             <CCardSubtitle style={{fontSize: "1rem"}}>Summer 2022, Torrance, CA</CCardSubtitle>
           </CCardBody>
