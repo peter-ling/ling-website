@@ -1,16 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import TypeWriterEffect from 'react-typewriter-effect';
 import lingImage from './assets/images/ling-photo.jpg'
 import stanfordLogo from './assets/images/stanford-logo.png'
 // import { Card } from '@mui/material';
 // import { CCard } from '@coreui/react'
+import { Button, Modal, Box, Typography } from '@mui/material';
 import { Card } from '@mui/material';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import ImgMediaCard from './app/components/ImgMediaCard';
 import { CCardBody, CCard, CCardImage, CCardText, CCardTitle, CCardSubtitle, CButton } from '@coreui/react';
 import NewJobCard from './app/components/NewJobCard';
@@ -153,7 +152,30 @@ const About = () => (
   </section>
 );
 
-const WorkExperience = () => (
+const WorkExperience = () => {
+
+  const [openFanduel, setOpenFanduel] = useState(false);
+  const [openMercury, setOpenMercury] = useState(false);
+
+  const handleOpenFanduel = () => {
+    setOpenFanduel(true);
+  };
+  
+  const handleCloseFanduel = () => {
+    setOpenFanduel(false);
+  };
+  
+  const handleOpenMercury = () => {
+    setOpenMercury(true);
+  };
+  
+  const handleCloseMercury = () => {
+    setOpenMercury(false);
+  };
+
+  return (
+
+
   <section className="work-section">
 
     <div className="work-greater-div">
@@ -166,17 +188,52 @@ const WorkExperience = () => (
           <CCardBody className="job-card-body">
             <CCardImage style={{width: '100%'}} orientation="top" src={require('./assets/images/fanduel_logo_2.jpeg')} />
             <CCardTitle style={{fontSize: "2rem"}}>FanDuel</CCardTitle>
-            <button className='job-card-button' href="#">learn more</button>
+            <button className='job-card-button' onClick={handleOpenFanduel}>learn more</button>
+            <Modal
+              open={openFanduel}
+              onClose={handleCloseFanduel}
+              aria-labelledby="modal-modal-title"
+              aria-describedby="modal-modal-description"
+              className='job-card-modal'
+            >
+              <Box className='job-card-modal-box'>
+                <h1>My time at Fanduel</h1>
+                <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                  Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+                </Typography>
+              </Box>
+            </Modal>
+
             <CCardSubtitle style={{fontSize: "1rem",  marginBottom: '-1.75rem'}}>Software Engineer Intern</CCardSubtitle>
             <CCardSubtitle style={{fontSize: "1rem"}}>Summer 2023, New York, NY</CCardSubtitle>
           </CCardBody>
         </CCard>
 
+
+
         <CCard className="job-card">
           <CCardBody className="job-card-body">
             <CCardImage style={{width: '100%'}} orientation="top" src={require('./assets/images/mercury_logo2.png')} />
             <CCardTitle style={{fontSize: "2rem"}}>Mercury Systems</CCardTitle>
-            <button className='job-card-button' href="#">learn more</button>
+
+
+            <button className='job-card-button' onClick={handleOpenMercury}>learn more</button>
+            <Modal
+              open={openMercury}
+              onClose={handleCloseMercury}
+              aria-labelledby="modal-modal-title"
+              aria-describedby="modal-modal-description"
+              className='job-card-modal'
+            >
+              <Box className='job-card-modal-box'>
+                <h1>My time at Mercury Systems</h1>
+                <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                  Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+                </Typography>
+              </Box>
+            </Modal>
+
+
             <CCardSubtitle style={{fontSize: "1rem", marginBottom: '-1.75rem'}}>Software Engineering Intern</CCardSubtitle>
             <CCardSubtitle style={{fontSize: "1rem"}}>Summer 2022, Torrance, CA</CCardSubtitle>
           </CCardBody>
@@ -186,7 +243,10 @@ const WorkExperience = () => (
     </div>
   </section>
 
-);
+  )
+  }
+
+  
 
 
 
@@ -253,7 +313,7 @@ const Projects = () => (
           <CCardBody className="project-card-body">
             <CCardTitle className='project-card-title'>emotional hub website</CCardTitle>
             <CCardSubtitle className="project-card-description"  style={{fontSize: "1rem", marginTop: '-1.75rem'}}>built a platform in html to serve as both a source of positivity and a reflective journal. gained database experience by linking the site up with a MongoDB responsible for reading, writing, and deleting.</CCardSubtitle>
-            <button className='project-card-button' onClick={() => window.open('https://github.com/peter-ling/word-guessing-game')}>learn more</button>
+            <button className='project-card-button' onClick={() => window.open('https://github.com/peter-ling/emotional-hub-website')}>learn more</button>
             <CCardSubtitle className="project-card-description" style={{fontSize: "1rem", marginBottom: '-1.75rem'}}>html, css, MongoDB</CCardSubtitle>
             <CCardSubtitle className="project-card-description" style={{fontSize: "1rem"}}>may 2021</CCardSubtitle>
           </CCardBody>
@@ -329,7 +389,7 @@ const App = () => (
     <Projects />
     <Contact />
     <footer style={{backgroundColor: "#38606B"}}>
-      <p style={{color: "#EBD3BC", backgroundColor: "#38606B"}}>Copyright © 2023 Peter Ling</p>
+      <p style={{color: "#EBD3BC", backgroundColor: "#38606B", paddingLeft: '0.5%'}}>Copyright © 2023 Peter Ling</p>
     </footer>
   </main>
 );
