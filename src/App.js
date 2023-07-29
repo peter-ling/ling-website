@@ -87,15 +87,15 @@ const Home = () => (
   <section id="home-section" className="home-section">
     <div className="home-name-div">
     <h1 style={{color:" #103842"}}>peter ling</h1>
-    {/* <h3 style={{color: "#103842", marginTop: '-1em'}}>engineer, developer, designer</h3> */}
-    <Typewriter
+    <h3 style={{color: "#103842", marginTop: '-1em'}}>engineer, developer, designer</h3>
+    {/* <Typewriter
 
       options={{
       strings: ['Engineer', 'Designer', 'Creator'],
       autoStart: true,
       loop: true,
       }}
-    />
+    /> */}
     {/* <TestTypewriter textStyle={{ fontSize: 250 }}/> */}
 
   
