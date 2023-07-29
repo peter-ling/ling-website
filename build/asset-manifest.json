@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/peter-ling.github.io/static/css/main.ed9151ee.css",
+    "main.js": "/peter-ling.github.io/static/js/main.a2ba5cbd.js",
+    "static/js/787.2e26f9cb.chunk.js": "/peter-ling.github.io/static/js/787.2e26f9cb.chunk.js",
+    "static/media/palisades-sunset.jpg": "/peter-ling.github.io/static/media/palisades-sunset.eb388fed2c98d0865e3a.jpg",
+    "static/media/ling-photo.jpg": "/peter-ling.github.io/static/media/ling-photo.85e22eaa0f7d83143f3a.jpg",
+    "static/media/fanduel_logo_2.jpeg": "/peter-ling.github.io/static/media/fanduel_logo_2.78a166878e8863b84e3f.jpeg",
+    "static/media/ling-resume.pdf": "/peter-ling.github.io/static/media/ling-resume.6ec49f6977aa3f5faeec.pdf",
+    "static/media/mercury_logo2.png": "/peter-ling.github.io/static/media/mercury_logo2.63a59c22cba42bf7f0a1.png",
+    "static/media/stanford-logo.png": "/peter-ling.github.io/static/media/stanford-logo.fff35a1b335ea368bb38.png",
+    "static/media/LeagueSpartan-Bold.otf": "/peter-ling.github.io/static/media/LeagueSpartan-Bold.caadcad8af387d419251.otf",
+    "index.html": "/peter-ling.github.io/index.html",
+    "main.ed9151ee.css.map": "/peter-ling.github.io/static/css/main.ed9151ee.css.map",
+    "main.a2ba5cbd.js.map": "/peter-ling.github.io/static/js/main.a2ba5cbd.js.map",
+    "787.2e26f9cb.chunk.js.map": "/peter-ling.github.io/static/js/787.2e26f9cb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ed9151ee.css",
+    "static/js/main.a2ba5cbd.js"
+  ]
+}
