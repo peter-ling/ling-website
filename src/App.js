@@ -347,7 +347,7 @@ const Projects = () => (
             <CCardTitle className='project-card-title'>tripmates</CCardTitle>
             <CCardSubtitle className="project-card-description"  style={{fontSize: "1rem", marginTop: '-1.75rem'}}>built an MVP for a peer-recommendation site for students studying abroad. created the recommendation grid and linked it with a supabase backend so that users' progress and a recommendation's number of votes would save</CCardSubtitle>
             <button className='project-card-button' onClick={() => window.open('https://github.com/peter-ling/tripmates')}>learn more</button>
-            <CCardSubtitle className="project-card-description" style={{fontSize: "1rem", marginBottom: '-1.75rem'}}>C++</CCardSubtitle>
+            <CCardSubtitle className="project-card-description" style={{fontSize: "1rem", marginBottom: '-1.75rem'}}>html, css</CCardSubtitle>
             <CCardSubtitle className="project-card-description" style={{fontSize: "1rem"}}>april — may 2023</CCardSubtitle>
           </CCardBody>
         </CCard>
