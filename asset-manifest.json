@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ling-website/static/css/main.15d929cf.css",
-    "main.js": "/ling-website/static/js/main.8bdab50c.js",
+    "main.js": "/ling-website/static/js/main.aafd22cf.js",
     "static/js/787.2e26f9cb.chunk.js": "/ling-website/static/js/787.2e26f9cb.chunk.js",
     "static/media/palisades-sunset.jpg": "/ling-website/static/media/palisades-sunset.eb388fed2c98d0865e3a.jpg",
     "static/media/ling-photo.jpg": "/ling-website/static/media/ling-photo.85e22eaa0f7d83143f3a.jpg",
@@ -12,11 +12,11 @@
     "static/media/LeagueSpartan-Bold.otf": "/ling-website/static/media/LeagueSpartan-Bold.caadcad8af387d419251.otf",
     "index.html": "/ling-website/index.html",
     "main.15d929cf.css.map": "/ling-website/static/css/main.15d929cf.css.map",
-    "main.8bdab50c.js.map": "/ling-website/static/js/main.8bdab50c.js.map",
+    "main.aafd22cf.js.map": "/ling-website/static/js/main.aafd22cf.js.map",
     "787.2e26f9cb.chunk.js.map": "/ling-website/static/js/787.2e26f9cb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.15d929cf.css",
-    "static/js/main.8bdab50c.js"
+    "static/js/main.aafd22cf.js"
   ]
 }
