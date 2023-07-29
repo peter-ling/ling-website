@@ -1,7 +1,7 @@
 {
   "name": "ling-website",
   "version": "0.1.0",
-  "homepage": "https://peter-ling.github.io/ling-website",
+  "homepage": "https://peter-ling.github.io",
   "private": true,
   "dependencies": {
     "@coreui/coreui": "^4.2.6",
