@@ -15,7 +15,7 @@ import { CCardBody, CCard, CCardImage, CCardText, CCardTitle, CCardSubtitle, CBu
 import NewJobCard from './app/components/NewJobCard';
 import Typewriter from 'typewriter-effect';
 import { red } from '@mui/material/colors';
-import Resume from './assets/ling-resume.pdf'
+import Resume from './assets/peter-ling-resume.pdf'
 
 
 // Function to handle smooth scrolling when the link is clicked
