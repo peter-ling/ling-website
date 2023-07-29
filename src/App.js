@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import './App.css';
 import TypeWriterEffect from 'react-typewriter-effect';
 import lingImage from './assets/images/ling-photo.jpg'
@@ -15,6 +15,8 @@ import { CCardBody, CCard, CCardImage, CCardText, CCardTitle, CCardSubtitle, CBu
 import NewJobCard from './app/components/NewJobCard';
 import Typewriter from 'typewriter-effect';
 import { red } from '@mui/material/colors';
+import Resume from './assets/ling-resume.pdf'
+
 
 // Function to handle smooth scrolling when the link is clicked
 function scrollToSection(event) {
@@ -45,12 +47,13 @@ const handleButtonClick = () => {
 
 const NavHeader = () => (
   <nav style={{ display: 'flex', padding: '1rem', width: "100%", backgroundColor: "#38606B" }}>
-    <p style={{flex: 4, color: "#EBD3BC"}}>Peter Ling</p>
+    <p style={{flex: 4, color: "#EBD3BC"}}>peter ling</p>
     <ul style={{ display: 'flex', flex: 6, justifyContent: 'space-evenly', listStyle: 'none', padding: 0, width: '100%', alignItems: 'center' }}>
-      <li><a href="#home-section" className="nav-header-element scroll-link">Home</a></li>
-      <li><a href="#about-section" className="nav-header-element scroll-link">About</a></li>
-      <li><a href="#projects-section" className="nav-header-element scroll-link">Projects</a></li>
-      <li><a href="#contact-section" className="nav-header-element scroll-link">Contact</a></li>
+      <li><a href="#home-section" className="nav-header-element scroll-link">home</a></li>
+      <li><a href="#about-section" className="nav-header-element scroll-link">about</a></li>
+      <li><a href="#work-section" className="nav-header-element scroll-link">work experience</a></li>
+      <li><a href="#projects-section" className="nav-header-element scroll-link">projects</a></li>
+      <li><a href="#contact-section" className="nav-header-element scroll-link">contact </a></li>
     </ul>
   </nav>
 );
@@ -149,6 +152,7 @@ const About = () => (
         <p>concentration in human-computer interaction</p>
       </div>
     </div>
+    <button className="resume-button" onClick={() => window.open(Resume)}>see my resumé</button>
   </section>
 );
 
@@ -176,7 +180,7 @@ const WorkExperience = () => {
   return (
 
 
-  <section className="work-section">
+  <section id="work-section" className="work-section">
 
     <div className="work-greater-div">
       <h2>work experience</h2>
@@ -198,9 +202,16 @@ const WorkExperience = () => {
             >
               <Box className='job-card-modal-box'>
                 <h1>My time at Fanduel</h1>
-                <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                  Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-                </Typography>
+                {/* <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                  Some info on fanduel
+                </Typography> */}
+                <p className='job-card-modal-description'>as a software engineering intern, I worked on a backend team that was responsible for receiving and constructing data from 3rd party sources into FanDuel's daily fantasy sports platform. my work included: </p>
+                <ul className='job-card-modal-list'>
+                  <li>writing numerous API endpoints in java to properly handle sports data within FanDuel while operating on the agile software development cycle</li>
+                  <li>gaining an undertsanding of the company's engineering architecture in order to update services to new development stacks</li>
+                  <li>undergoing thorough testing and code review prior to releasing features onto production through FanDuel's deployment pipelines</li>
+                  <li>participating on an intern hackathon team which conducted product research and presented a new feature which potentially help to cross-sell FanDuel customers between daily fantasy sports and sportsbook</li>
+                </ul>
               </Box>
             </Modal>
 
@@ -227,9 +238,11 @@ const WorkExperience = () => {
             >
               <Box className='job-card-modal-box'>
                 <h1>My time at Mercury Systems</h1>
-                <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                  Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-                </Typography>
+                <p className='job-card-modal-description'>spending a summer as a software engineering intern at Mercury introduced me to the world of aerospace an defense engineering which was completely foreign to me before. in my first professional software engineering experience, i learned how to communicate with other engineers on a scrum team. i completed my project which was to:</p>
+                <ul className='job-card-modal-list'>
+                  <li>create a packaging app in C/C++ built to take in a binary file representing the internal system of the V-22 Osprey plane</li>
+                  <li>gain an understanding of public/private key encryption and use the OpenSSL library to ensure that the binary file would load in safely and securly. </li>
+                </ul>
               </Box>
             </Modal>
 
@@ -368,11 +381,11 @@ const Contact = () => (
   <section id="contact-section" className='contact-section'>
     <div className='contact-greater-div'>
       <h2 className="contact-section-title">contact me</h2>
-      <h3>i love to learn and meet people, so don't be shy and hit me up!</h3>
+      <h3>here are some ways you can get in touch with me!</h3>
       <div className='contact-elements-div'>
-        <a className='contact-element' href='mailto:pling1@stanford.edu'>pling1@stanford.edu</a>
-        <a className='contact-element' href="https://www.linkedin.com/in/ling-peter/" target="_blank">linkedin</a>
-        <a className='contact-element' href="https://github.com/peter-ling" target="_blank">github</a>
+        <a className='contact-element-button' href='mailto:pling1@stanford.edu'>pling1@stanford.edu</a>
+        <a className='contact-element-button' href="https://www.linkedin.com/in/ling-peter/" target="_blank">linkedin</a>
+        <a className='contact-element-button' href="https://github.com/peter-ling" target="_blank">github</a>
       </div>
     </div>
   </section>
