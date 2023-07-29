@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.027d53f9.css",
+    "main.js": "/react-gh-pages/static/js/main.ae1f3a7e.js",
+    "static/js/787.2e26f9cb.chunk.js": "/react-gh-pages/static/js/787.2e26f9cb.chunk.js",
+    "static/media/palisades-sunset.jpg": "/react-gh-pages/static/media/palisades-sunset.eb388fed2c98d0865e3a.jpg",
+    "static/media/ling-photo.jpg": "/react-gh-pages/static/media/ling-photo.85e22eaa0f7d83143f3a.jpg",
+    "static/media/fanduel_logo_2.jpeg": "/react-gh-pages/static/media/fanduel_logo_2.78a166878e8863b84e3f.jpeg",
+    "static/media/ling-resume.pdf": "/react-gh-pages/static/media/ling-resume.6ec49f6977aa3f5faeec.pdf",
+    "static/media/mercury_logo2.png": "/react-gh-pages/static/media/mercury_logo2.63a59c22cba42bf7f0a1.png",
+    "static/media/stanford-logo.png": "/react-gh-pages/static/media/stanford-logo.fff35a1b335ea368bb38.png",
+    "static/media/LeagueSpartan-Bold.otf": "/react-gh-pages/static/media/LeagueSpartan-Bold.caadcad8af387d419251.otf",
+    "index.html": "/react-gh-pages/index.html",
+    "main.027d53f9.css.map": "/react-gh-pages/static/css/main.027d53f9.css.map",
+    "main.ae1f3a7e.js.map": "/react-gh-pages/static/js/main.ae1f3a7e.js.map",
+    "787.2e26f9cb.chunk.js.map": "/react-gh-pages/static/js/787.2e26f9cb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.027d53f9.css",
+    "static/js/main.ae1f3a7e.js"
+  ]
+}
