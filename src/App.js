@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './App.css';
 import TypeWriterEffect from 'react-typewriter-effect';
 import lingImage from './assets/images/ling-photo.jpg'
@@ -391,20 +391,32 @@ const Contact = () => (
   </section>
 );
 
-const App = () => (
-  <main className="App" style={{ width: '100%', height: "100%", backgroundColor: "#38606B"}}>
+const App = () => {
 
-    <NavHeader />
-    
-    <Home />
-    <About />
-    <WorkExperience />
-    <Projects />
-    <Contact />
-    <footer style={{backgroundColor: "#38606B"}}>
-      <p style={{color: "#EBD3BC", backgroundColor: "#38606B", paddingLeft: '0.5%'}}>Copyright © 2023 Peter Ling</p>
+  useEffect(() => {
+    const isMobileDevice = /Mobi|Android/i.test(navigator.userAgent);
+    if (isMobileDevice) {
+      alert('this site is currently only optimized for desktops for now, so it might not look pretty yet on your mobile device. try using a desktop device in the meantime!');
+    }
+  }, []);
+
+  return (
+    <main className="App" style={{ width: '100%', height: "100%", backgroundColor: "#38606B"}}>
+
+      <NavHeader />
+      
+      <Home />
+      <About />
+      <WorkExperience />
+      <Projects />
+      <Contact />
+      <footer style={{backgroundColor: "#38606B"}}>
+        <p style={{color: "#EBD3BC", backgroundColor: "#38606B", paddingLeft: '0.5%'}}>Copyright © 2023 Peter Ling</p>
     </footer>
   </main>
-);
+    
+  )
+
+}
 
 export default App;
