@@ -120,7 +120,7 @@ const Home = () => (
             multiTextLoop={true}
           /> */}
           
-    </div>
+    </div> 
     
   </section>
 );
