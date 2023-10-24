@@ -220,7 +220,7 @@ const WorkExperience = () => {
             </Modal>
 
             <CCardSubtitle style={{fontSize: "1rem",  marginBottom: '-1.75rem'}}>Software Engineer Intern</CCardSubtitle>
-            <CCardSubtitle style={{fontSize: "1rem"}}>Summer 2023, New York, NY</CCardSubtitle>
+            <CCardSubtitle style={{fontSize: "1rem"}}>October 2023—, Remote</CCardSubtitle>
           </CCardBody>
         </CCard>
 
