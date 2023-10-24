@@ -158,8 +158,17 @@ const About = () => (
 
 const WorkExperience = () => {
 
+  const [openStartup, setOpenStartup] = useState(false);
   const [openFanduel, setOpenFanduel] = useState(false);
   const [openMercury, setOpenMercury] = useState(false);
+
+  const handleOpenStartup = () => {
+    setOpenStartup(true);
+  };
+  
+  const handleCloseStartup = () => {
+    setOpenStartup(false);
+  };
 
   const handleOpenFanduel = () => {
     setOpenFanduel(true);
@@ -187,6 +196,33 @@ const WorkExperience = () => {
       <h3>here's where i've interned</h3>
 
       <div className="work-experiences-div">
+
+      <CCard className="job-card">
+          <CCardBody className="job-card-body">
+            {/* <CCardImage style={{width: '100%'}} orientation="top" src={require('./assets/images/fanduel_logo_2.jpeg')} /> */}
+            <CCardTitle style={{fontSize: "2rem"}}>Stealth Mode Startup</CCardTitle>
+            <button className='job-card-button' onClick={handleOpenStartup}>learn more</button>
+            <Modal
+              open={openStartup}
+              onClose={handleCloseStartup}
+              aria-labelledby="modal-modal-title"
+              aria-describedby="modal-modal-description"
+              className='job-card-modal'
+            >
+              <Box className='job-card-modal-box'>
+                <h1>My time at Fanduel</h1>
+                {/* <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                  Some info on fanduel
+                </Typography> */}
+                <p className='job-card-modal-description'>i work part-time as a software engineer for a stealth mode startup. the team works out of new york so i am remote while i'm in school. i help to create features in react native using next.js and supabase and i also contribute insightful design input, as the small team size allows me to have a larger amount of responsibility.</p>
+                
+              </Box>
+            </Modal>
+
+            <CCardSubtitle style={{fontSize: "1rem",  marginBottom: '-1.75rem'}}>Software Engineer Intern</CCardSubtitle>
+            <CCardSubtitle style={{fontSize: "1rem"}}>Summer 2023, New York, NY</CCardSubtitle>
+          </CCardBody>
+        </CCard>
 
         <CCard className="job-card">
           <CCardBody className="job-card-body">
