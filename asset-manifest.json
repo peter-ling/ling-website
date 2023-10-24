@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.a59199bd.css",
-    "main.js": "/static/js/main.753e2530.js",
+    "main.js": "/static/js/main.48d0dfed.js",
     "static/js/787.2e26f9cb.chunk.js": "/static/js/787.2e26f9cb.chunk.js",
     "static/media/palisades-sunset.jpg": "/static/media/palisades-sunset.eb388fed2c98d0865e3a.jpg",
     "static/media/ling-photo.jpg": "/static/media/ling-photo.85e22eaa0f7d83143f3a.jpg",
     "static/media/fanduel_logo_2.jpeg": "/static/media/fanduel_logo_2.78a166878e8863b84e3f.jpeg",
-    "static/media/peter-ling-resume.pdf": "/static/media/peter-ling-resume.d359130f5d73b421d57d.pdf",
+    "static/media/peter-ling-resume.pdf": "/static/media/peter-ling-resume.83be8fdbef9d8ce3d1f5.pdf",
     "static/media/mercury_logo2.png": "/static/media/mercury_logo2.63a59c22cba42bf7f0a1.png",
     "static/media/stanford-logo.png": "/static/media/stanford-logo.fff35a1b335ea368bb38.png",
     "static/media/LeagueSpartan-Bold.otf": "/static/media/LeagueSpartan-Bold.caadcad8af387d419251.otf",
     "index.html": "/index.html",
     "main.a59199bd.css.map": "/static/css/main.a59199bd.css.map",
-    "main.753e2530.js.map": "/static/js/main.753e2530.js.map",
+    "main.48d0dfed.js.map": "/static/js/main.48d0dfed.js.map",
     "787.2e26f9cb.chunk.js.map": "/static/js/787.2e26f9cb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a59199bd.css",
-    "static/js/main.753e2530.js"
+    "static/js/main.48d0dfed.js"
   ]
 }
