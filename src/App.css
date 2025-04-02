@@ -19,6 +19,7 @@ html {
 
 .App {
   width: 100%;
+  min-height: 100vh;
 }
 
 .App-header {
@@ -114,8 +115,24 @@ html {
 }
 
 body {
-  font-family: "LeagueSpartan", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-color);
+  line-height: 1.6;
   overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+  line-height: 1.2;
+  margin: 0 0 1rem 0;
+  font-family: "LeagueSpartan", sans-serif;
+  border: none;
 }
 
 h1 {
@@ -131,7 +148,8 @@ h3 {
 }
 
 p {
-  font-size: 1.5rem;
+  margin: 0 0 1.5rem 0;
+  border: none;
 }
 
 .contact-element-button {
@@ -384,4 +402,222 @@ p {
   align-items: center;
   justify-content: center;
 
+}
+
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --accent-color: #e74c3c;
+  --text-color: #2c3e50;
+  --background-color: #ffffff;
+  --section-spacing: 4rem;
+  --navbar-height: 64px;
+}
+
+.section {
+  padding: var(--section-spacing) 0;
+  width: 100%;
+  border: none;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 1.25rem;
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Modern card styling */
+.card {
+  background: none;
+  border: none;
+  box-shadow: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styling */
+.button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  background-color: #EBD3BC;
+  color: #38606B;
+  text-decoration: none;
+  font-family: "LeagueSpartan", sans-serif;
+}
+
+.button:hover {
+  background-color: #d4b89d;
+  transform: translateY(-2px);
+}
+
+/* Grid layout */
+.grid {
+  display: grid;
+  gap: 2rem;
+  border: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  #home .grid {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+
+  #home .button-container {
+    justify-content: center;
+  }
+}
+
+/* Animation classes */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.6s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2980b9;
+}
+
+main {
+  padding-top: var(--navbar-height); /* Add padding to prevent content from hiding under navbar */
+}
+
+#home {
+  min-height: calc(100vh - var(--navbar-height));
+  display: flex;
+  align-items: center;
+  background-color: #38606B;
+  position: relative;
+  color: #EBD3BC;
+  font-family: "LeagueSpartan", sans-serif;
+  overflow: hidden;
+}
+
+#home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("./assets/images/palisades-sunset-min.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.15;
+  z-index: 1;
+}
+
+#home .container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+#home .grid {
+  background: none;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+#home h1 {
+  color: #EBD3BC;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin: 0;
+}
+
+#home p, #home div {
+  color: #EBD3BC;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  background-color: #EBD3BC;
+  color: #38606B;
+  text-decoration: none;
+  font-family: "LeagueSpartan", sans-serif;
+  font-size: 1.1rem;
+}
+
+.button:hover {
+  background-color: #d4b89d;
+  transform: translateY(-2px);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+}
+
+/* Remove any potential borders from grid items */
+.grid > * {
+  border: none;
 }
