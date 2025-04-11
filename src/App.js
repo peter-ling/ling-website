@@ -62,7 +62,7 @@ const NavHeader = () => {
     { label: 'Home', href: '#top' },
     { label: 'About', href: '#about' },
     { label: 'Experience', href: '#experience' },
-    // { label: 'Projects', href: '#projects' }, // Commented out for now
+    { label: 'Projects', href: '#projects' },
     { label: 'Contact', href: '#contact' },
   ];
 
@@ -504,7 +504,13 @@ const Projects = () => (
     <h2>projects</h2>
     <h3>take a look at some of the stuff i've worked on over the years</h3>
 
-      <div className="projects-grid-container">
+      <div className="grid" style={{ 
+        display: 'grid',
+        gridTemplateColumns: '1fr 1fr',
+        gap: '2rem',
+        border: 'none',
+        justifyItems: 'center'
+      }}>
 
         <CCard className="project-card">
           <CCardBody className="project-card-body">
@@ -643,13 +649,6 @@ const App = () => {
   const [openStartup, setOpenStartup] = useState(false);
   const [openFanduel, setOpenFanduel] = useState(false);
   const [openMercury, setOpenMercury] = useState(false);
-
-  useEffect(() => {
-    const isMobileDevice = /Mobi|Android/i.test(navigator.userAgent);
-    if (isMobileDevice) {
-      alert('this site is currently only optimized for desktops for now, so it might not look pretty yet on your mobile device. try using a desktop device in the meantime!');
-    }
-  }, []);
 
   return (
     <div className="App">
@@ -918,7 +917,7 @@ const App = () => {
           <div className="container" style={{ border: 'none' }}>
             <h2 style={{ 
               fontSize: '2.5rem',
-              color: '#2c3e50',
+              color: '#EBD3BC',
               marginBottom: '3rem',
               textAlign: 'center',
               fontFamily: '"LeagueSpartan", sans-serif'
@@ -1412,7 +1411,7 @@ const App = () => {
           </div>
         </section>
 
-        {/* Projects Section - Commented out temporarily
+        {/* Projects Section */}
         <section id="projects" className="section" style={{ backgroundColor: '#f8f9fa' }}>
           <div className="container" style={{ border: 'none' }}>
             <h2 style={{ 
@@ -1423,22 +1422,155 @@ const App = () => {
               fontFamily: '"LeagueSpartan", sans-serif'
             }}>Projects</h2>
             <div className="grid" style={{ 
-              gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+              display: 'grid',
+              gridTemplateColumns: '1fr 1fr',
               gap: '2rem',
-              border: 'none'
+              border: 'none',
+              justifyItems: 'center'
             }}>
-              // Project cards will go here
+              {/* Project Card 1 */}
+              <Card sx={{ 
+                border: 'none',
+                boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
+                borderRadius: '20px',
+                overflow: 'hidden',
+                height: '100%',
+                display: 'flex',
+                flexDirection: 'column'
+              }}>
+                <CardContent sx={{ 
+                  flex: 1,
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  textAlign: 'center',
+                  justifyContent: 'center',
+                  padding: '2rem'
+                }}>
+                  <Typography 
+                    variant="h6"
+                    sx={{ 
+                      fontFamily: '"LeagueSpartan", sans-serif',
+                      fontWeight: 600,
+                      marginBottom: 1
+                    }}
+                  >
+                    daha
+                  </Typography>
+                  <Typography 
+                    sx={{ 
+                      fontFamily: '"LeagueSpartan", sans-serif',
+                      fontWeight: 600,
+                      marginBottom: 0.5,
+                      fontSize: '0.9rem'
+                    }}
+                  >
+                    An Online Campus Lending Marketplace
+                  </Typography>
+                  <Typography 
+                    sx={{ 
+                      fontFamily: '"LeagueSpartan", sans-serif',
+                      marginBottom: 2,
+                      color: '#666',
+                      fontSize: '0.9rem'
+                    }}
+                  >
+                    React Native, Supabase, Expo, Figma
+                  </Typography>
+                  <Button 
+                    onClick={() => window.open('https://www.youtube.com/watch?v=9TLdPbU3arc&ab_channel=PeterLing', '_blank')}
+                    sx={{
+                      fontFamily: '"LeagueSpartan", sans-serif',
+                      textTransform: 'none',
+                      backgroundColor: '#2c3e50',
+                      color: 'white',
+                      fontSize: '0.9rem',
+                      '&:hover': {
+                        backgroundColor: '#1a252f'
+                      }
+                    }}
+                  >
+                    Learn More
+                  </Button>
+                </CardContent>
+              </Card>
+
+              {/* Project Card 2 */}
+              <Card sx={{ 
+                border: 'none',
+                boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
+                borderRadius: '20px',
+                overflow: 'hidden',
+                height: '100%',
+                display: 'flex',
+                flexDirection: 'column'
+              }}>
+                <CardContent sx={{ 
+                  flex: 1,
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  textAlign: 'center',
+                  justifyContent: 'center',
+                  padding: '2rem'
+                }}>
+                  <Typography 
+                    variant="h6"
+                    sx={{ 
+                      fontFamily: '"LeagueSpartan", sans-serif',
+                      fontWeight: 600,
+                      marginBottom: 1
+                    }}
+                  >
+                    Quad Contest
+                  </Typography>
+                  <Typography 
+                    sx={{ 
+                      fontFamily: '"LeagueSpartan", sans-serif',
+                      fontWeight: 600,
+                      marginBottom: 0.5,
+                      fontSize: '0.9rem'
+                    }}
+                  >
+                    Rogue Like 2d Survival Game
+                  </Typography>
+                  <Typography 
+                    sx={{ 
+                      fontFamily: '"LeagueSpartan", sans-serif',
+                      marginBottom: 2,
+                      color: '#666',
+                      fontSize: '0.9rem'
+                    }}
+                  >
+                    Unity, C#
+                  </Typography>
+                  <Button 
+                    onClick={() => window.open('https://www.quadcontest.online', '_blank')}
+                    sx={{
+                      fontFamily: '"LeagueSpartan", sans-serif',
+                      textTransform: 'none',
+                      backgroundColor: '#2c3e50',
+                      color: 'white',
+                      fontSize: '0.9rem',
+                      '&:hover': {
+                        backgroundColor: '#1a252f'
+                      }
+                    }}
+                  >
+                    Learn More
+                  </Button>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>
-        */}
 
         {/* Contact Section */}
-        <section id="contact" className="section" style={{ backgroundColor: '#f8f9fa' }}>
+        <section id="contact" className="section">
           <div className="container" style={{ border: 'none' }}>
             <h2 style={{ 
               fontSize: '2.5rem',
-              color: '#2c3e50',
+              color: '#EBD3BC',
               marginBottom: '3rem',
               textAlign: 'center',
               fontFamily: '"LeagueSpartan", sans-serif'
@@ -1457,7 +1589,7 @@ const App = () => {
                 <p style={{ 
                   marginBottom: '2rem',
                   fontSize: '1.2rem',
-                  color: '#2c3e50',
+                  color: '#EBD3BC',
                   fontFamily: '"LeagueSpartan", sans-serif'
                 }}>
                   I'm always interested in hearing about new projects and opportunities.
